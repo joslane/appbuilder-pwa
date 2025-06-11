@@ -13,17 +13,10 @@ Display an HTML Book.
         fetch: any;
     }
 
-    let {
-        references,
-        bodyLineHeight,
-        bodyFontSize,
-        fetch
-    }: Props = $props();
-
+    let { references, bodyLineHeight, bodyFontSize, fetch }: Props = $props();
 
     let htmlHead: string = $state();
     let htmlBody: string = $state();
-
 
     async function loadHtml(collectionId: string, bookId: string) {
         console.log(`loadHtml: ${collectionId}, ${bookId}`);
